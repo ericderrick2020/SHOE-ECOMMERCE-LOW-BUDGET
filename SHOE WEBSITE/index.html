@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        * {
+            box-sizing: content-box;
+            color: red;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-image: url(./ASSETS/image/black_and_white.jpg);
+            background-repeat: none;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .logo {
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+
+        .navbar ul li {
+            font-size: 20px;
+            list-style-type: none;
+            display: inline-flex;
+            padding: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .shoe {
+            rotate: 30deg;
+        }
+
+        .shoe img {
+            width: 800px;
+            margin-bottom: 23px;
+        }
+
+        .home {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 125px;
+        }
+        .login{
+            background-color: black;
+            color: white;
+            height: 350px;
+            width: 440px;
+            margin-top: 5%;
+            text-align: center;
+            border-radius: 23px;
+        }
+        .form-group{
+           margin-top: 35px;
+           color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">SHOE FACTS</div>
+        </div>
+        <ul>
+            <li>HOME</li>
+            <li>SHOP</li>
+            <li>JOBS</li>
+            <li>ABOUT US</li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="shoe">
+            <img src="./ASSETS/image/shoe.png" alt="">
+        </div>
+        <div class="login">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="account" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;">UserName or Email</label><br>
+                    <input type="text" id="UserName" name="UserName" style=" height: 40px; width: 280px;"><br>
+                    <label for="password" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;">Password</label><br>
+                    <input type="password" id="Password" name="Password" style=" height: 40px; width: 280px;"><br>
+                    <p style="font-size: 14px;"><a href="#">Forget Password</a></p><br>
+                    <button style="width: 280px; height: 40px; font-size: 23px;">Login</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
